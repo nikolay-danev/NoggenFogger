@@ -1,0 +1,43 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="wrapper">
+    <h1>SIGN IN</h1>
+   
+    <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <input asp-for="Input.Email" class="form-control" placeholder="Email" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Input.Password" class="form-control" placeholder="Password" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <div class="checkbox">
+                <label asp-for="Input.RememberMe">
+                    <input asp-for="Input.RememberMe" />
+                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                </label>
+            </div>
+        </div>
+        <input type="submit" class="submit" value="SIGN IN">
+        <div class="form-group">
+            <br />
+            <p style="text-align:center">
+                <a asp-page="./ForgotPassword" style=" text-decoration:none;">FORGOT YOUR PASSWORD?</a>
+            </p>
+            <p style="text-align:center">
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" style=" text-decoration:none;">REGISTER AS A NEW GAMER</a>
+            </p>
+        </div>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

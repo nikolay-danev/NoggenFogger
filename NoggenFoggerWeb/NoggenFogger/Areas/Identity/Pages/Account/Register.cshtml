@@ -1,0 +1,41 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="wrapper">
+    <h1>Register An Account</h1>
+    <p id="registerP">
+        Get your NoggenFogger account and explore all games!
+    </p>
+    <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <input asp-for="Input.Nickname" class="form-control" placeholder="Username" />
+            <span asp-validation-for="Input.Nickname" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Input.Email" class="form-control" placeholder="Email" />
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Input.Password" class="form-control" placeholder="Password" />
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm Password" />
+            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+        <input type="submit" class="submit" value="Register">
+        <div class="form-group">
+            <br />
+            <p style="text-align:center;">
+                <a href="/Identity/Account/Login" style=" text-decoration:none">ALREADY HAS AN ACCOUNT? SIGN IN</a>
+            </p>
+        </div>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

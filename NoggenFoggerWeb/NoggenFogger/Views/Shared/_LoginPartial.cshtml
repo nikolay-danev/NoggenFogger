@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Identity
+@using NoggenFogger.Data.Entities
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@if (SignInManager.IsSignedIn(User))
+{
+    var userNickname = UserManager.Users.First(x => x.UserName == User.Identity.Name);
+
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" style="font-size:22px;">Welcome, @userNickname.Nickname!</a>
+            </li>
+            <li>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link" style="text-decoration:none;">Logout</button>
+            </li>
+        </ul>
+    </form>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a asp-area="Identity" asp-page="/Account/Register">REGISTER</a></li>
+        <li><a asp-area="Identity" asp-page="/Account/Login">SIGN IN</a></li>
+    </ul>
+}

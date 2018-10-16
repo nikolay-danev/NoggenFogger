@@ -1,0 +1,287 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+html {
+    /* To make use of full height of page*/
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    padding-top: 50px;
+    background: url(https://d9me64que7cqs.cloudfront.net/images/common/footer-bg-lg-1ef544513bc161835a4bb721dbde4e1b85ab57f05ddf45ececa5f68aee53273b941f2b3d3a87bf79ed16a39a84e27fe4e056f8f2396dad93d8d41f1ead4b0f63.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+
+.body-content {
+    margin: 0;
+    height: 100%;
+    min-height: calc(100vh - 70px);
+}
+.content {
+    min-height: calc(100vh - 70px);
+}
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+.relative {
+    position: relative;
+}
+#carousel-example-generic .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+p{
+    text-align:center;
+    color:lightgrey;
+}
+    .footer p a {
+        text-decoration: none;
+        color: dodgerblue;
+    }
+.footer {
+    border-top: 1px solid;
+    border-top-color:deepskyblue;
+    margin-top:50px;
+    padding:20px;
+    background-color: #162b40;
+}
+
+#jumbotronStyle {
+    color: red;
+}
+#navigation-ctr {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.wrapper {
+    width: 420px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    font: 25px Oswald;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: #000 0px 1px 5px;
+    margin: 0px;
+}
+
+#registerP {
+    font: 13px Open Sans;
+    color: wheat;
+    text-shadow: #000 0px 1px 5px;
+    margin-bottom: 30px;
+    text-align:center;
+}
+
+.form {
+    width: 100%;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 98%;
+    padding: 15px 0px 15px 8px;
+    border-radius: 5px;
+    box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.3), 0 1px 1px -1px rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    color: #6E6E6E;
+    text-shadow: #000 0px 1px 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#28D2DE), to(#1A878F));
+    background-image: -webkit-linear-gradient(#28D2DE 0%, #1A878F 100%);
+    background-image: -moz-linear-gradient(#28D2DE 0%, #1A878F 100%);
+    background-image: -o-linear-gradient(#28D2DE 0%, #1A878F 100%);
+    background-image: linear-gradient(#28D2DE 0%, #1A878F 100%);
+    font: 14px Oswald;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: #000 0px 1px 5px;
+    border: 1px solid #000;
+    opacity: 0.7;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(rgba(255, 255, 255, 0.2)));
+}
+
+input:focus {
+    box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.7), 0 1px 1px -1px rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -ms-transition: 1s ease;
+    transition: 1s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.name-help, .email-help {
+    display: none;
+    padding: 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+.checkbox{
+    color:wheat;
+}
+
+
+
+
+
+
+
+.movie-card {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 315px;
+    margin: 2em;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.movie-header {
+    padding: 0;
+    margin: 0;
+    height: 367px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
+
+.manOfSteel {
+    background:center;
+    background-size: cover;
+}
+
+
+.header-icon-container {
+    position: relative;
+}
+
+.header-icon {
+    width: 100%;
+    height: 367px;
+    line-height: 367px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+    opacity: .85;
+}
+
+    .header-icon:hover {
+        background: rgba(0, 0, 0, 0.15);
+        font-size: 74px;
+        text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        opacity: 1;
+    }
+
+.movie-card:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.movie-content {
+    padding: 18px 18px 24px 18px;
+    margin: 0;
+}
+
+.movie-content-header, .movie-info {
+    display: table;
+    width: 100%;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin: 0;
+    display: table-cell;
+    color:black;
+}
+
+.imax-logo {
+    width: 80px;
+    height: 45px;
+    background: url("../images/companyLogo.png") no-repeat;
+    background-size: contain;
+    display: table-cell;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+}
+
+.movie-info {
+    margin-top: 1em;
+}
+
+.info-section {
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+    .info-section:first-of-type {
+        text-align: left;
+    }
+
+    .info-section:last-of-type {
+        text-align: right;
+    }
+
+    .info-section label {
+        display: block;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: .5em;
+        font-size: 9px;
+    }
+
+    .info-section span {
+        font-weight: 700;
+        font-size: 11px;
+    }
+
+@media screen and (max-width: 500px) {
+    .movie-card {
+        width: 95%;
+        max-width: 95%;
+        margin: 1em;
+        display: block;
+    }
+}

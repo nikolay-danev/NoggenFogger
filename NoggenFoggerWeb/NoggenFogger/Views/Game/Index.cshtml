@@ -1,0 +1,42 @@
+﻿@model ICollection<GameViewModel>
+@{ string description = "";}
+
+
+<div class="container">
+    @foreach (var game in Model)
+    {
+        <div class="movie-card">
+            <div class="movie-header manOfSteel" style="background-image: url(@game.ImageUrl)">
+                <div class="header-icon-container">
+                    <a href="@game.VideoTrailer" target="_blank">
+                        <i class="material-icons header-icon">&#xE037;</i>
+                    </a>
+                </div>
+            </div>
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <a href="" style="text-decoration:none;">
+                        <h3 class="movie-title" style="color:orangered">@game.Title</h3>
+
+                    </a>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section" style="height:50px;">
+                        <label>Author</label>
+                        <small>@game.Author</small>
+                        <label>NoggenFoggered</label>
+                        <small style="color:black;">@game.LikesCount</small>
+                        <button id="likeButton" onclick="myFunction(this)" data-toggle="popover" data-trigger="hover" data-content="NoggenFogger your game" value="@game.Title">
+                            <i class="fa fa-flask"></i>
+                        </button>
+                    </div>
+                    <div class="pre-scrollable" style="margin-left:20px; height: 100px;">
+                        <label>Description</label>
+                        <br />
+                        <span>@game.Description</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

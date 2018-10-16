@@ -1,0 +1,37 @@
+﻿@model GameViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="wrapper">
+    <h1>BOOST YOUR GAME</h1>
+
+    <form method="post" asp-controller="Game" asp-action="Add">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <input asp-for="Title" class="form-control" placeholder="Title" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="Author" class="form-control" placeholder="Author" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="ImageUrl" class="form-control" placeholder="Image Url" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="VideoTrailer" class="form-control" placeholder="Trailer Url" />
+            <span asp-validation-for="VideoTrailer" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input asp-for="DownloadLink" class="form-control" placeholder="Download Link" />
+            <span asp-validation-for="DownloadLink" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <textarea asp-for="Description" class="form-control" placeholder="Description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <input type="submit" class="submit" value="UPLOAD YOUR GAME">
+    </form>
+</div>
