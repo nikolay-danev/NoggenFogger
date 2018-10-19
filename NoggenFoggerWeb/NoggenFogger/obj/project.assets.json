@@ -12321,11 +12321,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikolay Danev\\source\\repos\\NoggenFoggerWeb\\NoggenFogger\\NoggenFogger.csproj",
+      "projectUniqueName": "C:\\Users\\Nikolay Danev\\Desktop\\NoggenFogger\\NoggenFoggerWeb\\NoggenFogger\\NoggenFogger.csproj",
       "projectName": "NoggenFogger",
-      "projectPath": "C:\\Users\\Nikolay Danev\\source\\repos\\NoggenFoggerWeb\\NoggenFogger\\NoggenFogger.csproj",
+      "projectPath": "C:\\Users\\Nikolay Danev\\Desktop\\NoggenFogger\\NoggenFoggerWeb\\NoggenFogger\\NoggenFogger.csproj",
       "packagesPath": "C:\\Users\\Nikolay Danev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikolay Danev\\source\\repos\\NoggenFoggerWeb\\NoggenFogger\\obj\\",
+      "outputPath": "C:\\Users\\Nikolay Danev\\Desktop\\NoggenFogger\\NoggenFoggerWeb\\NoggenFogger\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

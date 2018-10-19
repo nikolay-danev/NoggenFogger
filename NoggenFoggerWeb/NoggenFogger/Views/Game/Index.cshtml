@@ -17,20 +17,20 @@
                 <div class="movie-content-header">
                     <a href="" style="text-decoration:none;">
                         <h3 class="movie-title" style="color:orangered">@game.Title</h3>
-
                     </a>
+                    <a href="@game.DownloadLink" target="_blank" class="btn-download"></a>
                 </div>
                 <div class="movie-info">
-                    <div class="info-section" style="height:50px;">
+                    <div class="info-section" id="infoSection">
                         <label>Author</label>
                         <small>@game.Author</small>
                         <label>NoggenFoggered</label>
-                        <small style="color:black;">@game.LikesCount</small>
+                        <small>@game.LikesCount</small>
                         <button id="likeButton" onclick="myFunction(this)" data-toggle="popover" data-trigger="hover" data-content="NoggenFogger your game" value="@game.Title">
                             <i class="fa fa-flask"></i>
                         </button>
                     </div>
-                    <div class="pre-scrollable" style="margin-left:20px; height: 100px;">
+                    <div class="pre-scrollable" id="gameDescription">
                         <label>Description</label>
                         <br />
                         <span>@game.Description</span>

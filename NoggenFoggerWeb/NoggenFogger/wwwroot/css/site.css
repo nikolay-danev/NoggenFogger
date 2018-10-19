@@ -55,6 +55,247 @@ p{
     background-color: #162b40;
 }
 
+#gameDescription {
+    margin-left: 20px;
+    height: 100px;
+}
+
+#infoSection {
+    height:50px;
+
+}
+#infoSection small {
+    color:black;
+}
+
+.footer p{
+    padding-top:0;
+   padding-bottom:0;
+}
+
+.btn-download {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid white;
+    background-image: url("http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/arrow-download-icon.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 2px #17beab, -7px -7px 10px -4px #17beab, inset 1px 1px 2px white, inset 0 0 10px 2px #17beab;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
+}
+
+    .btn-download:before, .btn-download:after {
+        content: '';
+        position: absolute;
+    }
+
+    .btn-download:before {
+        top: 6px;
+        left: 7px;
+        width: 3px;
+        height: 3px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5), -1px -1px 4px rgba(255, 255, 255, 0.8), -2px -2px 4px rgba(255, 255, 255, 0.7), -3px -3px 5px rgba(255, 255, 255, 0.5), -4px -4px 6px rgba(255, 255, 255, 0.3), 1px 1px 4px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(255, 255, 255, 0.7), 3px 3px 5px rgba(255, 255, 255, 0.5), 4px 4px 6px rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-download:after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        -webkit-animation: glow 1s infinite;
+        animation: glow 1s infinite;
+    }
+
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(-7%);
+        transform: translateY(-7%);
+        background-position: 50% 48%;
+    }
+
+    50% {
+        -webkit-transform: translateY(7%);
+        transform: translateY(7%);
+        background-position: 50% 52%;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(-7%);
+        transform: translateY(-7%);
+        background-position: 50% 48%;
+    }
+
+    50% {
+        -webkit-transform: translateY(7%);
+        transform: translateY(7%);
+        background-position: 50% 52%;
+    }
+}
+
+@-webkit-keyframes glow {
+    20% {
+        box-shadow: 0 0 0 0 rgba(23, 190, 171, 0.3), inset 0 0 0 0 rgba(23, 190, 171, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 50px rgba(23, 190, 171, 0), inset 0 0 0 12px rgba(23, 190, 171, 0);
+    }
+}
+
+@keyframes glow {
+    20% {
+        box-shadow: 0 0 0 0 rgba(23, 190, 171, 0.3), inset 0 0 0 0 rgba(23, 190, 171, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 50px rgba(23, 190, 171, 0), inset 0 0 0 12px rgba(23, 190, 171, 0);
+    }
+}
+
+a {
+    color: #17beab;
+    text-decoration: none;
+}
+
+p {
+    position: relative;
+    padding: 5rem 3rem;
+}
+
+
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #00c7ec;
+    border: 1px solid #00c7ec;
+    border-radius: 5px;
+    line-height: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    bottom: 65px;
+}
+
+    .button:hover {
+        color: white;
+        box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+        background-color: #00c7ec;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        text-decoration: none;
+    }
+
+        .button:hover:before {
+            -webkit-animation: shine 0.5s 0s linear;
+            -moz-animation: shine 0.5s 0s linear;
+            animation: shine 0.5s 0s linear;
+            text-decoration: none;
+        }
+
+    .button:active {
+        box-shadow: 0 0 0 0 transparent;
+        -webkit-transition: box-shadow 0.2s ease-in;
+        -moz-transition: box-shadow 0.2s ease-in;
+        transition: box-shadow 0.2s ease-in;
+        text-decoration: none;
+    }
+
+    .button:before {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 86%;
+        position: absolute;
+        top: 7%;
+        left: 0%;
+        opacity: 0;
+        background: white;
+        box-shadow: 0 0 15px 3px white;
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+        text-decoration: none;
+    }
+
+@-webkit-keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@-moz-keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+@keyframes shine {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+
+
 #jumbotronStyle {
     color: red;
 }
@@ -85,8 +326,14 @@ h1 {
     text-shadow: #000 0px 1px 5px;
     margin-bottom: 30px;
     text-align:center;
+    padding-bottom:0;
+    padding-top:0;
 }
-
+.accountManage {
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align:center;
+}
 .form {
     width: 100%;
 }
